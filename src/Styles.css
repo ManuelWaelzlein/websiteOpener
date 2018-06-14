@@ -1,0 +1,125 @@
+.body {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 120%;
+    font-family: Arial, serif ;
+    color: rgb(100,100,100);
+    text-align: left;
+}
+
+.image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.bar {
+    position: absolute;
+    top: 42%;
+    right: 0;
+    bottom: 42%;
+    left: 0;
+    background-color: rgba(50,50,50,0.5);
+}
+
+.form {
+    position: absolute;
+    top: 44%;
+    left: 35%;
+    right: 35%;
+    color: rgb(255,255,255);
+    animation-name: In;
+    animation-duration: 2s;
+}
+
+.input {
+    position: relative;
+    padding-left: 4px;
+    font-size: 150%;
+    width: 50%;
+    float: right;
+    outline: none;
+    border: none;
+    background-color: rgb(150,150,150);
+    color: rgb(255,255,255);
+}
+
+::-webkit-input-placeholder {
+    color: rgb(255,255,255);
+    font-size: 60%;
+}
+
+.label {
+    position: relative;
+    float: left;
+    font-size: 150%;
+}
+
+.button {
+    position: relative;
+    width: 30%;
+    font-size: 130%;
+    text-align: left;
+    padding: 3px;
+    float: right;
+    outline: none;
+    border: none;
+}
+
+.error {
+    position: relative;
+    text-align: center;
+    font-size: 100%;
+    color: rgb(255,0,0);
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 300%;
+}
+
+.version {
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+    color: rgb(255,255,255)
+}
+
+.shadow {
+    position: absolute;
+    top: 42%;
+    right: 0;
+    bottom: 42%;
+    left: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.7));
+    pointer-events: none;
+}
+
+@keyframes In {
+    from {
+        left: -40%;
+        right: 110%; }
+    to {
+        left: 35%;
+        right: 35%;
+    }
+}
+
+@keyframes Out {
+    from {
+        left: 35%;
+        right: 35%; }
+    to {
+        left: 110%;
+        right: -40%;
+    }
+}
+
